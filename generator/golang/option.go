@@ -52,7 +52,7 @@ type Features struct {
 	CodeRefSlim            bool `code_ref_slim:"Genenerate code ref by given idl-ref.yaml with less refs to avoid conflict"`
 	CodeRef                bool `code_ref:"Genenerate code ref by given idl-ref.yaml"`
 	TrimIDL                bool `trim_idl:"Simplify IDL to the most concise form before generating code."`
-	EnableNestedStruct     bool `enable_nested_struct:"Generate nested struct when fiele name is \"_\", valid only in 'slim template'"`
+	EnableNestedStruct     bool `enable_nested_struct:"Generate nested field when 'type name' equal to 'field name', valid only in 'slim template'"`
 }
 
 var defaultFeatures = Features{
