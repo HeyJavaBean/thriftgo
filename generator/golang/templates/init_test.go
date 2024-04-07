@@ -16,9 +16,9 @@ package templates_test
 
 import (
 	"fmt"
+	"github.com/cloudwego/thriftgo/tool/text/template"
 	"log"
 	"testing"
-	"text/template"
 
 	"github.com/cloudwego/thriftgo/generator/backend"
 	"github.com/cloudwego/thriftgo/generator/golang"

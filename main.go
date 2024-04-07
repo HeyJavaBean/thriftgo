@@ -16,6 +16,7 @@ package main
 
 import (
 	"fmt"
+
 	"os"
 	"runtime/debug"
 	"runtime/pprof"
@@ -55,7 +56,6 @@ func main() {
 		defer f.Close()
 		_ = pprof.StartCPUProfile(f)
 		defer pprof.StopCPUProfile()
-
 		startTime := time.Now()
 		defer func() {
 			fmt.Printf("Cost: %s\n", time.Since(startTime))

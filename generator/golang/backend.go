@@ -16,10 +16,10 @@ package golang
 
 import (
 	"fmt"
+	"github.com/cloudwego/thriftgo/tool/text/template"
 	"go/format"
 	"path/filepath"
 	"strings"
-	"text/template"
 
 	"github.com/cloudwego/thriftgo/generator/golang/streaming"
 	"github.com/cloudwego/thriftgo/generator/golang/templates/slim"
